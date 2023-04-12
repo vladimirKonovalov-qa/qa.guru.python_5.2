@@ -10,3 +10,4 @@ def test_search(browser_size):
 def test_search_without_result(browser_size):
     browser.element('[name="q"]').should(be.blank).type('fjkfdsjk').press_enter()
     browser.element('[id="cnt"]').should(have.text('По запросу fjkfdsjk ничего не найдено.'))
+    print('По данному запросу ничего не найдено')
